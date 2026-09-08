@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -23,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
 rules:
 - MATCH,PROXIES
