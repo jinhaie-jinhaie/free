@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -39,19 +39,21 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 04 - xiaohe
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 - name: 🇨🇭 CH 05 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -63,7 +65,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - xiaohe
   type: vless
   server: 208.69.78.217
@@ -78,18 +80,16 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 07 - xiaohe
   type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
